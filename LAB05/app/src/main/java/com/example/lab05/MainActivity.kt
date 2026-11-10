@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java).apply {
-                putExtra("Vladyslav Dvorakovskyi", etName.text.toString())
-                putExtra("104053", etStudentId.text.toString())
+                putExtra("USER_NAME", etName.text.toString())
+                putExtra("STUDENT_ID", etStudentId.text.toString())
             }
             startActivity(intent)
         }
